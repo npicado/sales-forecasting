@@ -18,15 +18,26 @@ somewhat erratic behavior, which indicates the need to inquire about
 the sales and marketing strategies applied during the past year,
 and those planned for the current.
 
-After meeting with the client to discuss the matter, I receive a
-spreadsheet with the following main factors that influence the
-behavior of sales.
+After meeting with the client to discuss the situation, I receive
+a spreadsheet with the sales revenue and the main factors that
+influence their behavior.
 
-![Main Factors](resources/factors.png)
+![Main Factors](resources/input.png)
 
 With all the data in hand, I decided to choose the Multiple Linear
 Regression mathematical model because it allows me to make predictions
 using seasonality and factors as independent variables.
 
-You can check the data in the `resources/data.csv` file, and the
-forecasting process in the `src/forecast.php` file.
+The next step was to develop a PHP script that executes the
+mathematical model using the extracted and transformed data.
+
+When I finished, I got a **promising sales forecasting** with a satisfying
+**average error rate of 1.5%**. You can see the result in the graph below:
+
+![Main Factors](resources/result.png)
+
+If you want to know more, you can review the following files:
+
+- Input data: `resources/input.csv`
+- Script with process details: `src/forecast.php`
+- Execution results: `resources/results.csv` (run the script first)
